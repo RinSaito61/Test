@@ -1,1 +1,42 @@
 #:kivy 1.0.9
+GreetingWidget:
+    canvas.before:
+        Color: 
+            rgba:0, 0, 1, 1
+        Rectangle:
+            pos:self.pos
+            size:self.size
+
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.size
+
+        Label:
+            font_size: 68
+            id: label1
+            text: root.text
+
+        BoxLayout:
+            size_hint_y: 0.2
+
+            Button:
+                id:morning
+                text: '朝'
+                color:'red'
+                background_color:(200/255,222/255,234/255,1)
+                font_size: 30
+                on_press: root.morningClick()
+            Button:
+                id:evening
+                text: '昼'
+                color:'green'
+                background_color:(200/255,222/255,234/255,1)
+                font_size: 30
+                on_press:root.eveningClick()
+            Button:
+                id:goodnight
+                text: '夜'
+                color:'blue'
+                background_color:(200/255,222/255,234/255,1)
+                font_size: 30
+                on_press:root.goodnightClick()
