@@ -1,0 +1,2 @@
+kivyの基本を知るための簡単なGUIアプリ
+参考:https://youtu.be/usbEwmOIhwo

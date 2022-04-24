@@ -1,0 +1,2 @@
+ボタンを押すとテキストが変わるアプリ
+参考:https://qiita.com/dario_okazaki/items/7892b24fcfa787faface
